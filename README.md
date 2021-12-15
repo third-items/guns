@@ -8,13 +8,13 @@
         <br>      
         <span>
             <span>
-                 Guns官方交流群：254550081(满)   684163663(满)   207434260(满)(三个群已满，扫下方二维码加官方微信群)
+                 Guns官方交流群：(QQ群将迁移至微信群，请扫下方二维码加官方微信群)
             </span>
         </span>
         <br>
         <br>
         <a href="http://spring.io/projects/spring-boot">
-            <img src="https://img.shields.io/badge/spring--boot-2.3.5-green.svg" alt="spring-boot">
+            <img src="https://img.shields.io/badge/spring--boot-2.4.2-green.svg" alt="spring-boot">
         </a>
         <a href="http://mp.baomidou.com">
             <img src="https://img.shields.io/badge/mybatis--plus-3.4.0-blue.svg" alt="mybatis-plus">
