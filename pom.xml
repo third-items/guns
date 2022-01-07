@@ -229,12 +229,6 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!--接口管理-->
-        <dependency>
-            <groupId>cn.stylefeng.roses</groupId>
-            <artifactId>api-manager-spring-boot-starter</artifactId>
-            <version>${roses.kernel.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
