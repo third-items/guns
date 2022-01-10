@@ -36,6 +36,12 @@
             <version>${roses.kernel.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>api-manager-spring-boot-starter</artifactId>
+            <version>${roses.kernel.version}</version>
+        </dependency>
+
         <!--认证和鉴权模块-->
         <dependency>
             <groupId>cn.stylefeng.roses</groupId>
