@@ -30,6 +30,22 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>devops-spring-boot-starter</artifactId>
+            <version>${roses.kernel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>generator-spring-boot-starter</artifactId>
+            <version>${roses.kernel.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>api-manager-spring-boot-starter</artifactId>
+            <version>${roses.kernel.version}</version>
+        </dependency>
+
         <!--认证和鉴权模块-->
         <dependency>
             <groupId>cn.stylefeng.roses</groupId>
@@ -96,7 +112,7 @@
         <!--系统管理基础业务-->
         <dependency>
             <groupId>cn.stylefeng.roses</groupId>
-            <artifactId>system-integration-beetl</artifactId>
+            <artifactId>system-integration-rest</artifactId>
             <version>${roses.kernel.version}</version>
         </dependency>
 
