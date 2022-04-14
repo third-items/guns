@@ -34,7 +34,6 @@
             <groupId>cn.stylefeng.roses</groupId>
             <artifactId>kernel-s-devops-integration</artifactId>
             <version>${roses.kernel.version}</version>
-            <type>pom</type>
         </dependency>
 
         <!--认证和鉴权模块-->
