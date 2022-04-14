@@ -74,6 +74,9 @@ public class SpringMvcConfiguration implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/assets/");
+
+        // 流程设计器
+        registry.addResourceHandler("/designer/**").addResourceLocations("classpath:/designer/");
     }
 
 }

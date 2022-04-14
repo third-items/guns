@@ -34,7 +34,6 @@
             <groupId>cn.stylefeng.roses</groupId>
             <artifactId>kernel-s-ent-integration</artifactId>
             <version>${roses.kernel.version}</version>
-            <type>pom</type>
         </dependency>
 
         <!--认证和鉴权模块-->
@@ -103,7 +102,7 @@
         <!--系统管理基础业务-->
         <dependency>
             <groupId>cn.stylefeng.roses</groupId>
-            <artifactId>system-integration-beetl</artifactId>
+            <artifactId>system-integration-rest</artifactId>
             <version>${roses.kernel.version}</version>
         </dependency>
 

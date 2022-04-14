@@ -16,7 +16,7 @@ spring:
       max-file-size: 8GB
   jackson:
     time-zone: GMT+8
-    date-format: yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
     locale: zh_CN
     serialization:
       indent_output: false
@@ -41,7 +41,13 @@ sys-log:
   file-save-path: _sys_logs
 
 mybatis-plus:
-  mapper-locations: classpath*:cn/stylefeng/**/mapping/*.xml
+  # 加入对流程设计器的mapper扫描
+  mapper-locations: classpath*:cn/stylefeng/**/mapping/*.xml, classpath:/META-INF/modeler-mybatis-mappings/*.xml
+  # 流程设计器mapper修复 https://blog.csdn.net/xljx_1/article/details/105320252
+  configuration-properties:
+    prefix:
+    blobType: BLOB
+    boolValue: TRUE
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: true
@@ -57,4 +63,8 @@ mybatis-plus:
 # 单点登录开关
 sso:
   openFlag: false
+
+# minidao配置，用在报表
+minidao:
+  base-package: org.jeecg.modules.jmreport.desreport.dao*
 
