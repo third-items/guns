@@ -6,6 +6,7 @@ import org.flowable.spring.boot.FlowableSecurityAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration;
+import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 
 /**
  * SpringBoot方式启动类
@@ -14,7 +15,8 @@ import org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration;
  * @date 2020/12/1 17:50
  */
 @Slf4j
-@SpringBootApplication(scanBasePackages = {"cn.stylefeng", "org.jeecg.modules.jmreport"}, exclude = {FlywayAutoConfiguration.class, GunsDataSourceAutoConfiguration.class, FlowableSecurityAutoConfiguration.class})
+@SpringBootApplication(scanBasePackages = {"cn.stylefeng", "org.jeecg.modules.jmreport"},
+        exclude = {MongoAutoConfiguration.class, FlywayAutoConfiguration.class, GunsDataSourceAutoConfiguration.class, FlowableSecurityAutoConfiguration.class})
 public class GunsApplication {
 
     public static void main(String[] args) {
