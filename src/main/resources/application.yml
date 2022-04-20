@@ -68,3 +68,26 @@ sso:
 minidao:
   base-package: org.jeecg.modules.jmreport.desreport.dao*
 
+# 第三方支付的接入
+yungouos:
+  # 聚合支付，服务器url，一般为固定不用改
+  merge-pay-url: https://api.pay.yungouos.com/api/pay/merge/nativePay
+  # 微信商户id
+  wx-shop-id: x
+  # 支付宝商户id
+  ali-shop-id: x
+  # 聚合支付秘钥
+  merge-pay-secret: x
+  # 聚合支付，支付成功的回调地址
+  merge-pay-notify-url: https://www.demo.com/api/order/theNotify
+  # 聚合支付成功的跳转url，可以不填写
+  merge-pay-return-url: https://www.demo.com/order/list
+  # 聚合支付的商户id
+  merge-pay-shop-id: x
+  # 支付宝支付的秘钥
+  pay-ali-key: x
+  # 微信支付的秘钥
+  pay-wx-key: x
+
+
+
