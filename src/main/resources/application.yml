@@ -63,6 +63,7 @@ mybatis-plus:
 # 单点登录开关
 sso:
   openFlag: false
+  sso-client-type: server
 
 # minidao配置，用在报表
 minidao:
