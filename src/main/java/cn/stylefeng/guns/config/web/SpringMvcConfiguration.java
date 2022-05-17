@@ -25,12 +25,6 @@ import javax.annotation.Resource;
 @Import({cn.hutool.extra.spring.SpringUtil.class, CorsFilterConfiguration.class})
 public class SpringMvcConfiguration implements WebMvcConfigurer {
 
-    @Resource
-    private AuthJwtTokenSecurityInterceptor authJwtTokenSecurityInterceptor;
-
-    @Resource
-    private PermissionSecurityInterceptor permissionSecurityInterceptor;
-
     /**
      * 重写系统的默认错误提示
      *
@@ -51,18 +45,6 @@ public class SpringMvcConfiguration implements WebMvcConfigurer {
     @Bean
     public Jackson2ObjectMapperBuilderCustomizer jackson2ObjectMapperBuilderCustomizer() {
         return jacksonObjectMapperBuilder -> jacksonObjectMapperBuilder.serializerByType(Long.class, ToStringSerializer.instance).serializerByType(Long.TYPE, ToStringSerializer.instance);
-    }
-
-    /**
-     * 配置项目拦截器
-     *
-     * @author fengshuonan
-     * @date 2020/12/18 9:43
-     */
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(authJwtTokenSecurityInterceptor);
-        registry.addInterceptor(permissionSecurityInterceptor);
     }
 
     /**

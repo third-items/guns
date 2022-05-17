@@ -30,6 +30,21 @@
 
     <dependencies>
 
+        <!-- 微服务模块 -->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>micro-spring-boot-starter</artifactId>
+            <version>${roses.kernel.version}</version>
+        </dependency>
+
+        <!-- redis缓存 -->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>redis-spring-boot-starter</artifactId>
+            <version>${roses.kernel.version}</version>
+        </dependency>
+
+        <!--企业版集成-->
         <dependency>
             <groupId>cn.stylefeng.roses</groupId>
             <artifactId>kernel-s-ent-integration</artifactId>
