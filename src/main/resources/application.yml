@@ -90,5 +90,7 @@ yungouos:
   # 微信支付的秘钥
   pay-wx-key: x
 
-
+project:
+  start:
+    interval: 60
 
