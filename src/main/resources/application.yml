@@ -94,3 +94,7 @@ project:
   start:
     interval: 60
 
+#demo自定义路径名称
+jeecg:
+  jmreport:
+    customPrePath: /api
