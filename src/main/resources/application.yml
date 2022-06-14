@@ -65,10 +65,6 @@ sso:
   openFlag: false
   sso-client-type: server
 
-# minidao配置，用在报表
-minidao:
-  base-package: org.jeecg.modules.jmreport.desreport.dao*
-
 # 第三方支付的接入
 yungouos:
   # 聚合支付，服务器url，一般为固定不用改
